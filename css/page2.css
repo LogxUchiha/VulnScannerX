@@ -1,0 +1,232 @@
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+h1{
+  font-size: 2.5rem;
+  color: aliceblue;
+  margin-top: 18px;
+  margin-bottom: 2px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+textarea, pre {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+footer {
+  color: #fff;
+  padding: 0px;
+  text-align: center;
+  position: fixed;
+  bottom: -5px;
+  width: 100%; }
+
+textarea {
+  height: 292px;
+  resize: none;
+  margin-top: 15%;
+}
+
+button {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 15px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003974;
+}
+
+.result, #result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.highlight {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.result-square {
+  width: 222px;
+  height: 60px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* Ensure the squares are aligned properly */
+#results,
+#totalLinesSquare,
+#errorSquare,
+#languageSquare,
+#vulnerabilitySquare {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 26px;
+    margin-left: 23px;
+}
+
+/* Style adjustments for the results container */
+#results {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  margin-top: 41px;
+  display: inline-block;
+  width: calc(100% - 260px);
+  margin-left: 129px;
+
+}
+
+#results ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#results li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#results p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#results p0 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* CSS for codeInput textarea */
+#codeInput + .line-numbers {
+  counter-reset: line-number;
+}
+
+/* Styling for line numbers */
+#codeInput + .line-numbers li::before {
+  content: counter(line-number); /* Display line number */
+  counter-increment: line-number; /* Increment line number */
+  display: inline-block;
+  width: 2em; /* Adjust as needed */
+  text-align: right; /* Align the line numbers to the right */
+  margin-right: 0.5em; /* Adjust spacing between line number and code */
+  color: #888; /* Adjust color as needed */
+}
+.infographics {
+  padding: 40px 0;
+  background-color: #f8f8f8;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.infographic-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.infographic-container h3 {
+  margin-top: 0;
+}
+
+.severity-chart {
+  display: flex;
+  flex-direction: column;
+}
+
+.severity-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bar-fill {
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.low .bar-fill {
+  background-color: #00cc00;
+}
+
+.medium .bar-fill {
+  background-color: #ffcc00;
+}
+
+.high .bar-fill {
+  background-color: #ff3333;
+}
+
+.code-stats {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.code-stats li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-weight: bold;
+}
