@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>VulnScannerX</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/page2.css">
+
+    <style>
+      /* Add your CSS styles here */
+      #languageChart, #attackChart {
+          width: 500px;
+          height: 400px;
+          margin: 20px;
+      }
+      .infographic {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      h1{
+        margin-left: 229px;
+        color: aliceblue;
+      }
+      p1{
+        color: aliceblue;
+        margin-left: 146px;
+      }
+      p3{
+        color: brown;      
+      }
+
+      h4{
+        color: burlywood;
+      }
+  </style>
+
+</head>  
+<body>
+    <div class="content-wrapper">
+        <!-- Header -->
+        <header class="main-header clearfix" role="header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 999;">
+          <div class="logo">
+            <a href="#"><em>vuln</em> scanner X</a>
+          </div>
+          <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+          <nav id="menu" class="main-nav" role="navigation">
+            <ul class="main-menu">
+              <li><a href="/vulnxscanner/index.html">Home</a></li>
+              <li><a href="/vulnxscanner/index.html">About Us</a></li>
+              <li><a href="/vulnxscanner/index.html">VulnScanner</a></li>
+              <li><a href="/vulnxscanner/index.html">Suggestions</a></li>
+            </ul>
+          </nav>
+        </header>
+        <!-- Header End -->   
+
+        
+
+        <section class="section why-us" id="top" data-section="section1">
+          <!-- <video autoplay muted loop id="bg-video">
+              <source src="assets/images/tech.mp4" type="video/mp4" />
+          </video> -->
+          <div class="section why-us">
+              <!-- Text Box -->
+              <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-12">
+                            <main>
+                              
+                              <textarea id="codeInput" placeholder="Paste your code here..." rows="10"></textarea>
+                              <ul class="line-numbers"></ul> <!-- Add line numbers container -->
+                              <button onclick="detectAndAnalyze()">Analyze Code</button>
+                                <div class="infographic">
+                                    <div class="result-square" id="totalLinesSquare">Total Lines: <span id="totalLines"><br> 0<br/> </span></div>
+                                    <div class="result-square" id="errorSquare">Total Errors: <span id="totalErrors"><br> 0<br/> </span></div>
+                                    <div class="result-square" id="languageSquare">Language: <span id="language"><br>Unknown<br/></span></div>
+                                    <div class="result-square" id="vulnerabilitySquare">Vulnerability Level: <span id="vulnerabilityLevel"><br>Low<br/></span></div>
+                                </div>
+                                <div id="results"></div>
+                            </main>
+                    </div>
+                </div>
+            </div>
+              <!-- Text Box End -->
+          </div>
+      </section>
+
+
+      <section class="section coming-soon" id="vulnerabilityInfographics">
+          <div class="container">
+            <h1>Vulnerability Analysis Infographics</h1>
+              <div class="infographic">
+                  <div id="languageChart"></div>
+                  <div id="attackChart"></div>
+              </div>
+              <p1> <a href="https://developers.slashdot.org/story/19/03/25/0322202/which-programming-language-has-the-most-security-vulnerabilities">https://developers.slashdot.org/story/19/03/25/0322202/which-programming-language-has-the-most-security-vulnerabilities</p1>
+          </div>
+      </section>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p><i class="fa fa-copyright"></i> Copyright 2024 | Design: by Team Loga & Kawan-Kawan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <!-- Scripts -->
+
+
+      <!-- Load and run the JavaScript code to draw charts -->
+      <script>
+        const languageData = [
+            ['Language', 'Vulnerabilities'],
+            ['C', 47],
+            ['PHP', 17],
+            ['Java', 11],
+            ['JavaScript', 10],
+            ['Python', 5],
+            ['C++', 5],
+            ['Ruby', 4]
+        ];
+
+        const attackData = [
+            ['Attack Type', 'Count'],
+            ['CWE-476: NULL Pointer Dereference', 20],
+            ['A03:2021 -Injection', 150],
+            ['CWE-79: XSS Vulnerability', 100],
+            ['CWE-434: Unrestricted File Upload', 30]
+        ];
+
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawCharts);
+
+        function drawCharts() {
+            // Language Chart
+            var languageChart = new google.visualization.PieChart(document.getElementById('languageChart'));
+            languageChart.draw(google.visualization.arrayToDataTable(languageData), {
+                title: 'Most Vulnerable Programming Language',
+                is3D: true
+            });
+
+            // Attack Chart
+            var attackChart = new google.visualization.BarChart(document.getElementById('attackChart'));
+            attackChart.draw(google.visualization.arrayToDataTable(attackData), {
+                title: 'Most Prevalent Attack Type',
+                bar: { groupWidth: '30%' }
+            });
+        }
+    </script>
+</body>
+</html>

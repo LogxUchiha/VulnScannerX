@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>VulnScannerX</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+    <style>
+      h1{
+        font-size: 2.5rem;
+    color: aliceblue;
+    margin-top: 18px;
+    margin-bottom: -36px;
+      }
+    </style>
+ <style>
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); 
+  }
+
+
+#modal-image {
+  margin-bottom: 20px; /* Add margin below the image */
+}
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  </style>
+
+  </head>
+
+<body>
+
+
+<!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>vuln</em> scanner X</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">About Us</a></li>
+        <li><a href="#section3">VulnScanner</a></li>
+        <li><a href="#section4">Suggestions</a></li>
+      </ul>
+    </nav>
+  </header>
+<!--header-->
+
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="assets/images/tech.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+          <h6>Unveiling Vulnerabilities, Ensuring Integrity</h6>
+          <h2><em>Vuln </em>Scanner X</h2>
+          <div class="main-button">
+            <div class="col-md-12">
+              <fieldset>
+                <button type="submit" id="form-submit" class="button" onclick="window.location.href='index2.html'">Get started</button>
+              </fieldset>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <!-- ***** three objective of website ***** -->
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i>Comprehensive Vulnerability Detection</h4>
+              </div>
+              <div class="content-hide">
+                <p>VulnScannerX employs advanced algorithms to meticulously detect security vulnerabilities within your codebase. From common weaknesses to intricate 
+                  flaws, it provides a thorough analysis to fortify your application's defenses.
+                </p>
+                <!-- <div class="scroll-to-section"><a href="#section2">More Info.</a></div> -->
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i>Tailored Remediation Suggestions</h4>
+              </div>
+              <div class="content-hide">
+                <p>CBeyond detection, VulnScannerX offers tailored suggestions for remediation, guiding developers through the process of addressing identified 
+                  vulnerabilities effectively. These recommendations are customized to your project's context, facilitating swift and precise security enhancements.</p>
+                <!-- <div class="scroll-to-section"><a href="#section3">Details</a></div> -->
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>Code Quality Enhancement</h4>
+              </div>
+              <div class="content-hide">
+                <p> In addition to security, VulnScannerX contributes to overall code quality by highlighting areas for improvement and optimization. 
+                  Through comprehensive analysis and insights, it aids developers in writing cleaner, more efficient code that not only mitigates security risks but 
+                  also enhances performance and maintainability.</p>
+                <!-- <div class="scroll-to-section"><a href="#section4">Read More</a></div> -->
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ***** three objective of website ***** -->
+
+
+  <!-- ***** who are we and what we did ***** -->
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>who are we</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>LOGATHEPAN MUNIYAPPAN</a></li>
+              <li><a href='#tabs-2'>IZZAH IRDINA BINTI AMRI </a></li>
+              <li><a href='#tabs-3'>AMIR AMZAR BIN AZHAR</a></li>
+              <li><a href='#tabs-4'>AHMAD MAWARDI BIN MOHD ZAKI</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/loga.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>CWE-476: NULL Pointer Dereference</h4>
+                    <p>
+                      CWE-476, or NULL Pointer Dereference, describes a critical vulnerability where a program mistakenly accesses a NULL pointer, often leading to crashes or unintended behavior. Mitigation involves thorough null checks and robust error handling to prevent such occurrences, ensuring software stability and security.</p>
+                </div>
+                
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/irdina.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>A03:2021 -Injection</h4>
+                    <p>Injection vulnerability in the OWASP Top 10 refers to critical flaws where untrusted data sent to an interpreter can execute unintended commands, commonly seen
+                    in SQL, OS command, and LDAP injections, which can be mitigated by using parameterized queries, stored procedures, and proper input validation.</p> 
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/amjaar.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>CWE-79: XSS Vulnerability</h4>
+                    <p>CWE-79, also known as Cross-site Scripting (XSS), is a critical flaw in web applications. It allows attackers to inject malicious scripts into web pages viewed by other users. Mitigation involves implementing proper input validation and output encoding.</p>
+                </div>
+                              
+                </div>
+              </article>
+              <article id='tabs-4'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/wadi.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>CWE-434: Unrestricted File Upload</h4>
+                    <p>CWE-434 refers to a vulnerability where an application allows the upload of files without validating their type. This can enable attackers to upload and execute malicious files. Mitigation involves strict file type validation and implementing proper security controls.</p>
+                </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ***** who are we and what we did ***** -->
+
+
+        <!-- ***** vulnerabiltiy scanner***** -->
+
+  <section class="section coming-soon" data-section="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-12">
+          <div class="continer centerIt">
+            <div>
+              <h4>worry that your code might not secure enough? <em> try our tool and know the vulnerabilities.</em></h4>
+            </div>
+            <div class="col-md-12">
+              <fieldset>
+                <button type="submit" id="form-submit" class="button" onclick="window.location.href='index2.html'">Get started</button>
+              </fieldset>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="right-content">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** vulnerabiltiy scanner***** -->
+
+
+  <!-- suggestions -->
+
+
+  <div id="details-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h4 id="modal-title"></h4>
+      <img id="modal-image" src="" alt="Image" />
+      <p id="modal-description"></p>
+      <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer">More Info <i class="fa fa-angle-double-right"></i></a>
+    </div>
+  </div>
+
+<!-- -----------------------------------------CWE-476: NULL Pointer Dereference------------------------------------------------ -->
+<section class="section courses" data-section="section4">
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2> Suggestions for secure code</h2>
+          <h1>CWE-476: NULL Pointer Dereference</h1>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme">
+
+
+          <div class="item" data-title="Implement Null Pointer Checks" 
+          data-image="assets/images/code1.png"
+          data-description="Implementing null pointer checks involves incorporating defensive programming practices within software development to safeguard against crashes or undefined behavior resulting from accessing memory locations containing null pointers. This strategy entails systematically verifying the validity of pointers before any attempt to access or manipulate the data they point to, thus preventing potential program failures due to dereferencing null pointers. By meticulously scrutinizing pointers and implementing conditional checks to ensure their non-null status, developers fortify the reliability and stability of their code, enhancing overall software robustness and minimizing the risk of runtime errors. This approach fosters proactive error detection and resolution, contributing to the creation of more resilient and dependable software systems." 
+          data-link="https://cwe.mitre.org/data/definitions/476.html">
+          <img src="assets/images/CWE-476_1.png" alt="Course #1">
+            <div class="down-content">
+              <h4>Implement Null Pointer Checks</h4>
+              <p>Ensure all pointers are checked for null before dereferencing to prevent crashes or undefined behavior.</p>
+              <div class="text-button-pay">
+                <a href="https://cwe.mitre.org/data/definitions/476.html" target="_blank" rel="noopener noreferrer">CWE-476  <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          
+
+          <div class="item" data-title="Initialize Pointers" 
+          data-image="assets/images/code2.png"
+          data-description="The description expands on this concept by advocating for the initialization of pointers to NULL initially and assigning valid memory addresses only when necessary. This approach minimizes the risk of accidental dereferencing of uninitialized or invalid pointers, thereby enhancing code reliability and stability.
+          By initializing pointers to NULL initially, developers establish a clear indication of the pointer's state, signaling that it does not currently point to any valid memory location. This practice helps prevent unintended access or modification of memory, which can lead to runtime errors. Valid memory addresses are assigned to pointers only when there is a specific need to reference or manipulate data at those locations, ensuring that pointer operations are performed safely and intentionally." 
+          data-link="https://cwe.mitre.org/data/definitions/476.html">
+          <img src="assets/images/CWE-476_2.png" alt="Course #2">
+            <div class="down-content">
+              <h4>Initialize Pointers</h4>
+              <!-- <h6>CWE-476: NULL Pointer Dereference</h6> -->
+              <p>Initialize pointers to null and set them to valid memory addresses only when necessary to prevent accidental dereferencing.</p>
+              <div class="text-button-pay">
+                <a href="https://cwe.mitre.org/data/definitions/476.html" target="_blank" rel="noopener noreferrer">CWE-476  <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-title="Use Safe Access Functions" 
+          data-image="assets/images/code3.png"
+          data-description="The description emphasizes the utilization of tools like std::optional in C++ to mitigate the risk of dereferencing null pointers, thereby enhancing code robustness and reliability.
+          By leveraging safe access functions, developers can proactively prevent runtime errors and undefined behavior resulting from null pointer dereferencing. Constructs like std::optional provide a mechanism for representing values that may or may not be present, effectively encapsulating the possibility of null pointers within a type-safe wrapper. This approach encourages defensive programming practices by requiring explicit handling of potential null pointer scenarios, thereby reducing the likelihood of crashes or unexpected program behavior." 
+          data-link="https://cwe.mitre.org/data/definitions/476.html">
+          <img src="assets/images/CWE-476_3.png" alt="Course #2">
+          <div class="down-content">
+              <h4>Use Safe Access Functions</h4>
+              <!-- <h6>CWE-476: NULL Pointer Dereference</h6> -->
+              <p>Utilize functions that safely handle pointers, such as std::optional in C++, to avoid dereferencing null pointers.</p>
+              <div class="text-button-pay">
+                <a href="https://cwe.mitre.org/data/definitions/476.html" target="_blank" rel="noopener noreferrer">CWE-476  <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-title="Adopt Defensive Coding Practices" 
+          data-image="assets/images/code4.png"
+          data-description="Adopting defensive coding practices is paramount in software development, emphasizing meticulous error handling and the judicious use of null object patterns to bolster reliability and robustness. By scrutinizing return values of functions, developers can effectively detect and address errors or exceptional conditions, employing error codes, exceptions, or messages to mitigate risks and forestall unforeseen failures. Moreover, leveraging null object patterns proves invaluable in scenarios where the absence of data is expected, providing specialized placeholders to gracefully handle null-like states and streamline code logic. By integrating these defensive strategies, developers fortify their code against failures, enhance user experience, and elevate overall software quality, ensuring it can adeptly navigate unexpected situations while minimizing the impact of potential errors." 
+          data-link="https://cwe.mitre.org/data/definitions/476.html">
+          <img src="assets/images/CWE-476_4.png" alt="Course #2">
+          <div class="down-content">
+              <h4>Adopt Defensive Coding Practices</h4>
+              <!-- <h6>CWE-476: NULL Pointer Dereference</h6> -->
+              <p>Encourage practices, checking return values and using null object patterns where applicable.</p>
+              <div class="text-button-pay">
+                <a href="https://cwe.mitre.org/data/definitions/476.html" target="_blank" rel="noopener noreferrer">CWE-476  <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-title="Apply Static Code Analysis" 
+          data-image="assets/images/code5.png"
+          data-description="Applying Static Code Analysis underscores the importance of utilizing static analysis tools within the software development lifecycle to identify and rectify potential null pointer dereferences early in the development phase. By integrating static analysis tools into the development process, developers can automatically scan source code for vulnerabilities, including null pointer dereferences, enabling proactive detection and resolution of issues before they manifest as runtime errors. This proactive approach not only enhances code quality and reliability but also fosters a culture of continuous improvement and risk mitigation within software development teams. By embracing static code analysis, organizations can streamline the development process, minimize the likelihood of null pointer-related bugs, and ultimately deliver more robust and resilient software solutions to end-users." 
+          data-link="https://cwe.mitre.org/data/definitions/476.html">
+          <img src="assets/images/CWE-476_5.png" alt="Course #2">
+          <div class="down-content">
+              <h4>Apply Static Code Analysis</h4>
+              <!-- <h6>CWE-476: NULL Pointer Dereference</h6> -->
+              <p>Employ static analysis tools to detect potential null pointer dereferences during the development phase.</p>
+              <div class="text-button-pay">
+                <a href="https://cwe.mitre.org/data/definitions/476.html" target="_blank" rel="noopener noreferrer">CWE-476  <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+          
+
+
+
+<!-- -----------------------------------------CWE-476: NULL Pointer Dereference------------------------------------------------ -->
+
+
+
+
+<!-- -----------------------------------------------A03:2021 - Injection------------------------------------------------------- -->
+<section class="section courses" data-section="section4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2> Suggestions for secure code</h2>
+          <h1>A03:2021 - Injection</h1>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme">
+
+              <div class="item" data-title="Parameterized Queries" 
+              data-image="assets/images/code2-1.png"
+              data-description="Parameterized Queries promotes the practice of utilizing parameterized queries or prepared statements in database interactions to mitigate the risk of SQL injection attacks by decoupling SQL code from user input. By employing parameterized queries, developers can separate dynamic data (user input) from static SQL code, ensuring that user-supplied values are treated as parameters rather than executable SQL statements. This approach prevents malicious users from manipulating SQL queries through input fields, safeguarding the integrity and security of the database. Parameterized queries not only bolster the resilience of database-driven applications against SQL injection vulnerabilities but also promote cleaner and more maintainable code by enhancing query readability and reusability." 
+              data-link="https://owasp.org/Top10/A03_2021-Injection/">
+              <img src="assets/images/A03-2021_1.png" alt="Course #3">
+              <div class="down-content">
+                <h4>Parameterized Queries</h4>
+                <p>Use parameterized queries or prepared statements to prevent injection attacks by separating 
+                  SQL code from user input.</p>
+                <div class="text-button-pay">
+                  <a href="https://owasp.org/Top10/A03_2021-Injection/" target="_blank" rel="noopener noreferrer">A03:2021  <i class="fa fa-angle-double-right"></i></a>
+                </div>
+              </div>
+              </div>
+
+              <div class="item" data-title="Input Validation and Sanitization" 
+              data-image="assets/images/code2-2.png"
+              data-description="nput Validation and Sanitization is crucial for safeguarding against security vulnerabilities by ensuring that user inputs are free from malicious content. Validation involves checking input data against predefined criteria, such as length, format, or range, to ensure its integrity and adherence to expected patterns. Sanitization, on the other hand, involves removing or escaping potentially harmful characters or code from input data to neutralize potential threats, such as cross-site scripting (XSS) or SQL injection attacks. By combining validation and sanitization techniques, developers can fortify their applications against security breaches and maintain data integrity. Here's a simple Python example demonstrating input validation and sanitization using regular expressions:" 
+              data-link="https://owasp.org/Top10/A03_2021-Injection/">
+                <img src="assets/images/A03-2021_2.png" alt="Course #3">
+                <div class="down-content">
+                  <h4>Input Validation and Sanitization</h4>
+                  <p>Validate and sanitize all user inputs to ensure they do not contain malicious content.</p>
+                  <div class="text-button-pay">
+                    <a href="https://owasp.org/Top10/A03_2021-Injection/" target="_blank" rel="noopener noreferrer">A03:2021  <i class="fa fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+                </div>
+
+
+                <div class="item" data-title="Use ORM Frameworks" 
+                  data-image="assets/images/code2-3.png"
+                  data-description=" Object-Relational Mapping (ORM) frameworks offer a safer way to handle database queries by abstracting the interaction with the database. By representing database entities as objects in code, ORM frameworks help mitigate the risk of SQL injection attacks by automatically sanitizing and escaping user inputs. Popular ORM frameworks such as SQLAlchemy in Python or Hibernate in Java provide robust tools for developers to interact with databases in a secure and efficient manner." 
+                  data-link="https://owasp.org/Top10/A03_2021-Injection/">
+                  <img src="assets/images/A03-2021_3.png" alt="Course #3">
+                  <div class="down-content">
+                    <h4>Use ORM Frameworks</h4>
+                    <!-- <h6>A03:2021 - Injection :</h6> -->
+                    <p> Implement the Object-Relational Mapping (ORM) frameworks which can use to handle database queries safely.</p>
+                    <div class="text-button-pay">
+                      <a href="https://owasp.org/Top10/A03_2021-Injection/" target="_blank" rel="noopener noreferrer">A03:2021  <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                  </div>
+                  </div>
+
+
+                  <div class="item" data-title="Least Privilege Principle" 
+                    data-image="assets/images/code2-4.png"
+                    data-description="Utilizing stored procedures for database operations offers several security benefits, including abstraction of SQL code and reduction of direct interaction with user input. By encapsulating database logic within stored procedures, developers can mitigate the risk of SQL injection attacks by enforcing parameterized queries and preventing direct execution of arbitrary SQL statements. Stored procedures also promote code reusability, maintainability, and performance optimization by centralizing database operations within the database itself, thereby reducing network overhead and improving scalability." 
+                    data-link="https://owasp.org/Top10/A03_2021-Injection/">
+                    <img src="assets/images/A03-2021_4.png" alt="Course #3">
+                    <div class="down-content">
+                      <h4>Least Privilege Principle</h4>
+                      <!-- <h6>A03:2021 - Injection :</h6> -->
+                      <p>Grant the minimum necessary permissions to database accounts, limit the impact of injection attacks.</p>
+                      <div class="text-button-pay">
+                        <a href="https://owasp.org/Top10/A03_2021-Injection/" target="_blank" rel="noopener noreferrer">A03:2021  <i class="fa fa-angle-double-right"></i></a>
+                      </div>
+                    </div>
+                    </div>
+
+
+                    <div class="item" data-title="Stored Procedures" 
+                      data-image="assets/images/code2-5.png"
+                      data-description="nput Validation and Sanitization is crucial for safeguarding against security vulnerabilities by ensuring that user inputs are free from malicious content. Validation involves checking input data against predefined criteria, such as length, format, or range, to ensure its integrity and adherence to expected patterns. Sanitization, on the other hand, involves removing or escaping potentially harmful characters or code from input data to neutralize potential threats, such as cross-site scripting (XSS) or SQL injection attacks. By combining validation and sanitization techniques, developers can fortify their applications against security breaches and maintain data integrity. Here's a simple Python example demonstrating input validation and sanitization using regular expressions:" 
+                      data-link="https://owasp.org/Top10/A03_2021-Injection/">
+                      <img src="assets/images/A03-2021_5.png" alt="Course #3">
+                      <div class="down-content">
+                        <h4>Stored Procedures</h4>
+                        <!-- <h6>A03:2021 - Injection :</h6> -->
+                        <p>Use stored procedures for database operations to abstract SQL code and reduce direct interaction with user input.</p>
+                        <div class="text-button-pay">
+                          <a href="https://owasp.org/Top10/A03_2021-Injection/" target="_blank" rel="noopener noreferrer">A03:2021  <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                      </div>
+                      
+                      </div>
+                      
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- -----------------------------------------------A03:2021 - Injection------------------------------------------------------- -->
+
+
+<!-- --------------------------------CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')--------------------------- -->
+
+   <section class="section courses" data-section="section4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2> Suggestions for secure code</h2>
+          <h1>CWE-79: Improper Neutralization of Input During Web Page Generation</h1>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme">
+
+
+        <div class="item" data-title="Output Encoding" 
+          data-image="assets/images/code3-1.png"
+          data-description="In the realm of web development, output encoding serves as a robust shield against cross-site scripting (XSS) attacks, a prevalent security threat. By meticulously encoding all user input before rendering it in web pages, developers can effectively neutralize the risk of malicious scripts executing within the browser environment. This proactive measure ensures that any potentially harmful code injected into the application is treated as inert text, thus thwarting attackers' attempts to exploit vulnerabilities and compromising users' sensitive data." 
+          data-link="https://cwe.mitre.org/data/definitions/79.html">
+          <img src="assets/images/CWE-79_1.png" alt="Course #1">
+          <div class="down-content">
+            <h4>Output Encoding</h4>
+            <!-- <h6>CWE-79: Improper Neutralization of Input During Web Page Generation</h6> -->
+            <p>Encode all user input before displaying it in web pages to prevent malicious scripts being executed.</p>
+              <div class="text-button-pay">
+                <a href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79<i class="fa fa-angle-double-right"></i></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="item" data-title="Content Security Policy (CSP)" 
+          data-image="assets/images/code3-2.png"
+          data-description="Content Security Policy (CSP) stands as a stalwart defense mechanism in the arsenal of web security strategies, particularly against XSS attacks. This formidable tool empowers developers to delineate stringent directives governing the origins from which various types of content, including scripts, stylesheets, and images, can be loaded within their web applications. By enforcing CSP through server configurations or HTTP headers, developers can fortify their applications against XSS vulnerabilities by confining content execution to trusted sources, thereby significantly mitigating the risk of unauthorized script injections and bolstering the overall security posture." 
+          data-link="https://cwe.mitre.org/data/definitions/79.html">
+          <img src="assets/images/CWE-79_2.png" alt="Course #2">
+          <div class="down-content">
+            <h4>Content Security Policy (CSP)</h4>
+            <!-- <h6>CWE-79: Improper Neutralization of Input During Web Page Generation</h6> -->
+            <p> Apply Content Security Policy (CSP) to limit browser content sources. </p>
+              <div class="text-button-pay">
+                <a href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79<i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+        </div>
+        
+        <div class="item" data-title="Input Validation" 
+          data-image="assets/images/code3-3.png"
+          data-description="At the core of robust web security lies the practice of input validation, a fundamental yet formidable defense mechanism. By subjecting all incoming user inputs to rigorous scrutiny and validation against predefined criteria, developers can safeguard their applications against a myriad of security vulnerabilities, including injection attacks and data manipulation exploits. Through meticulous validation routines, developers ensure that user inputs conform to expected formats and reject any inputs that exhibit signs of malicious intent, thereby upholding data integrity, fortifying defenses, and fostering a resilient security posture." 
+          data-link="https://cwe.mitre.org/data/definitions/79.html">
+          <img src="assets/images/CWE-79_3.png" alt="Course #3">
+          <div class="down-content">
+            <h4>Input Validation</h4>
+            <!-- <h6>CWE-79: Improper Neutralization of Input During Web Page Generation</h6> -->
+            <p>Validate all user inputs to ensure they conform to expected formats and reject malicious input.</p>
+            <div class="text-button-pay">
+                <a href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79<i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+        </div>
+
+        <div class="item" data-title="Use Security Libraries" 
+          data-image="assets/images/code3-4.png"
+          data-description="Harnessing the power of security libraries and frameworks equipped with built-in cross-site scripting (XSS) protection mechanisms elevates web application security to new heights. These robust libraries offer a suite of features, including automatic input sanitization, output encoding, and context-aware escaping, designed to fortify applications against XSS vulnerabilities. By integrating such libraries into their development stack, developers not only streamline the implementation of essential security measures but also fortify their applications against the ever-evolving landscape of web-based threats, thereby safeguarding sensitive data and enhancing user trust." 
+          data-link="https://cwe.mitre.org/data/definitions/79.html">
+          <img src="assets/images/CWE-79_4.png" alt="Course #3">
+          <div class="down-content">
+            <h4>Use Security Libraries</h4>
+            <!-- <h6>CWE-79: Improper Neutralization of Input During Web Page Generation</h6> -->
+            <p>Utilize libraries or frameworks that provide built-in XSS protection mechanisms.</p>
+            <div class="text-button-pay">
+              <a href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79<i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" data-title="HTTPOnly Cookies" 
+          data-image="assets/images/code3-5.png"
+          data-description="Safeguarding session cookies against cross-site scripting (XSS) attacks stands as a pivotal pillar in web application security, and the HTTPOnly flag emerges as a formidable ally in this endeavor. By setting cookies with the HTTPOnly flag, developers can shield them from the prying eyes of client-side scripts, thwarting attempts at session hijacking or cookie theft. This prudent practice significantly reduces the attack surface for XSS vulnerabilities, enhances session management security, and bolsters user privacy and trust in web applications." 
+          data-link="https://cwe.mitre.org/data/definitions/79.html">
+          <img src="assets/images/CWE-79_5.png" alt="Course #3">
+          <div class="down-content">
+            <h4>HTTPOnly Cookies</h4>
+            <!-- <h6>CWE-79: Improper Neutralization of Input During Web Page Generation</h6> -->
+            <p>Set cookies with the HTTPOnly flag to prevent them from being accessed via JavaScript.</p>
+            <div class="text-button-pay">
+              <a href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79<i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- --------------------------------CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')--------------------------- -->
+
+
+
+<!-- --------------------------------------CWE-434: Unrestricted Upload of File with Dangerous Type----------------------------------------------- -->
+<section class="section courses" data-section="section4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2> Suggestions for secure code</h2>
+          <h1>CWE-434: Unrestricted Upload of File with Dangerous Type</h1>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme">
+
+
+        <div class="item" data-title="File Type Validation" 
+            data-image="assets/images/code4-1.png"
+            data-description="Implementing file type validation is critical to ensure that only allowed file types are accepted during the upload process. By verifying the file extension or MIME type against a whitelist of permitted formats, developers can mitigate the risk of accepting potentially malicious or harmful files. This validation step helps prevent security vulnerabilities such as arbitrary code execution or injection attacks that may arise from processing unauthorized file types." 
+            data-link="https://cwe.mitre.org/data/definitions/434.html">
+            <img src="assets/images/CWE_434_1.png" alt="Course #3">
+            <div class="down-content">
+              <h4>File Type Validation</h4>
+              <!-- <h6>CWE-434: Unrestricted Upload of File with Dangerous Type :</h6> -->
+              <p>Validate the type of uploaded files to ensure only allowed types are accepted.</p>
+              <div class="text-button-pay">
+                <a href="https://cwe.mitre.org/data/definitions/434.html" target="_blank" rel="noopener noreferrer">CWE-434  <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+            </div>
+
+
+            <div class="item" data-title="IFile Name Sanitization" 
+              data-image="assets/images/code4-2.png"
+              data-description="Sanitizing file names is essential for thwarting directory traversal attacks and other malicious exploits that exploit insecure file handling practices. By removing or replacing special characters, whitespace, or other potentially dangerous elements from file names, developers can prevent attackers from manipulating file paths and accessing sensitive directories or system resources. Effective file name sanitization helps fortify file upload functionalities against security threats and ensures the integrity and security of the file storage system." 
+              data-link="https://cwe.mitre.org/data/definitions/434.html">
+              <img src="assets/images/CWE_434_2.png" alt="Course #3">
+              <div class="down-content">
+                <h4>IFile Name Sanitization</h4>
+                <!-- <h6>CWE-434: Unrestricted Upload of File with Dangerous Type :</h6> -->
+                <p>Sanitize file names to prevent directory traversal and other attacks.</p>
+                <div class="text-button-pay">
+                  <a href="https://cwe.mitre.org/data/definitions/434.html" target="_blank" rel="noopener noreferrer">CWE-434  <i class="fa fa-angle-double-right"></i></a>
+                </div>
+              </div>
+              </div>
+
+
+              <div class="item" data-title="Content Scanning " 
+                data-image="assets/images/code4-3.png"
+                data-description=" Conducting content scanning of uploaded files using security scanning tools is a proactive measure to detect and mitigate potential threats posed by malicious content. By subjecting uploaded files to thorough analysis using antivirus software, malware scanners, or other security tools, developers can identify and neutralize any embedded threats, such as viruses, malware, or malicious scripts, before they can pose a risk to the application or its users. Content scanning enhances the security posture of file upload functionalities and helps safeguard against security breaches and data compromises." 
+                data-link="https://cwe.mitre.org/data/definitions/434.html">
+                <img src="assets/images/CWE_434_3.png" alt="Course #3">
+                <div class="down-content">
+                  <h4>Content Scanning </h4>
+                  <!-- <h6>CWE-434: Unrestricted Upload of File with Dangerous Type :</h6> -->
+                  <p>Scan uploaded files for malicious content using security scanning tools before accepting them.</p>
+                  <div class="text-button-pay">
+                    <a href="https://cwe.mitre.org/data/definitions/434.html" target="_blank" rel="noopener noreferrer">CWE-434  <i class="fa fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+                </div>
+
+
+                <div class="item" data-title="Limit File Size" 
+                  data-image="assets/images/code4-4.png"
+                  data-description="Enforcing limits on the size of uploaded files is essential for mitigating the risk of denial-of-service (DoS) attacks and resource exhaustion. By imposing reasonable size constraints on uploaded files, developers can prevent attackers from overwhelming the server infrastructure with excessively large or maliciously crafted files, thereby ensuring the availability and performance of the application for legitimate users. Limiting file size helps mitigate the risk of server downtime, network congestion, and other adverse effects associated with handling oversized or malicious files." 
+                  data-link="https://cwe.mitre.org/data/definitions/434.html">
+                  <img src="assets/images/CWE_434_4.png" alt="Course #3">
+                  <div class="down-content">
+                    <h4>Limit File Size</h4>
+                    <!-- <h6>CWE-434: Unrestricted Upload of File with Dangerous Type :</h6> -->
+                    <p>Impose limits on the size of uploaded files to prevent denial of service attacks.</p>
+                    <div class="text-button-pay">
+                      <a href="https://cwe.mitre.org/data/definitions/434.html" target="_blank" rel="noopener noreferrer">CWE-434  <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                  </div>
+                  </div>
+
+
+                  <div class="item" data-title="Quarantine Uploaded Files" 
+                    data-image="assets/images/code4-5.png"
+                    data-description="Adopting a quarantine approach to handle uploaded files securely until they are analyzed helps mitigate the risk of processing potentially harmful or malicious content. By isolating uploaded files in a restricted and secure environment, developers can prevent unauthorized access or execution of the files while they undergo thorough examination and validation. Quarantining uploaded files reduces the risk of security breaches and data compromises and provides an additional layer of defense against emerging threats and vulnerabilities." 
+                    data-link="https://cwe.mitre.org/data/definitions/434.html">
+                    <img src="assets/images/CWE_434_5.png" alt="Course #3">
+                    <div class="down-content">
+                      <h4>Quarantine Uploaded Files</h4>
+                      <!-- <h6>CWE-434: Unrestricted Upload of File with Dangerous Type :</h6> -->
+                      <p>Isolate uploaded files securely until analyzed.</p>
+                      <div class="text-button-pay">
+                        <a href="https://cwe.mitre.org/data/definitions/434.html" target="_blank" rel="noopener noreferrer">CWE-434  <i class="fa fa-angle-double-right"></i></a>
+                      </div>
+                    </div>
+                    
+                    </div>
+      </div>
+                    
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- --------------------------------------CWE-434: Unrestricted Upload of File with Dangerous Type----------------------------------------------- -->
+
+
+
+  
+<!-- Footer -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2024  
+          | Design: by Team Loga & Kawan-Kawan </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- Footer -->
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  var items = document.querySelectorAll('.item');
+  var modal = document.getElementById('details-modal');
+  var modalTitle = document.getElementById('modal-title');
+  var modalDescription = document.getElementById('modal-description');
+  var modalImage = document.getElementById('modal-image');
+  var modalLink = document.getElementById('modal-link');
+  var closeBtn = document.querySelector('.close-btn');
+
+  items.forEach(function(item) {
+    item.addEventListener('click', function() {
+      var title = item.getAttribute('data-title');
+      var description = item.getAttribute('data-description');
+      var link = item.getAttribute('data-link');
+      var imageSrc = item.getAttribute('data-image'); // add this line
+
+      modalTitle.innerText = title;
+      modalDescription.innerText = description;
+      modalLink.href = link;
+      modalImage.src = imageSrc; // add this line
+
+      modal.style.display = "block";
+    });
+  });
+
+  closeBtn.addEventListener('click', function() {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener('click', function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+  </script>
+</body>
+</html>
